@@ -18,7 +18,6 @@
 - [dev-groundrules](#dev-groundrules)
   - [📚 목차](#-목차)
   - [Git Commit Rules](#git-commit-rules)
-    - [문서 목록](#문서-목록)
   - [Git Tools \& Config (TODO)](#git-tools--config-todo)
   - [Code Style (TODO)](#code-style-todo)
   - [Workflow (TODO)](#workflow-todo)
@@ -33,18 +32,10 @@
 - 언제 어떤 이모지/무드 태그를 쓸지
 - 커밋 메시지 예시/패턴
 
-### 문서 목록
+모든 커밋 관련 규칙은 아래 문서 하나에 정리합니다:
 
-- [`git/Git Conventional Type.md`](git/Git%20Conventional%20Type.md)  
-  → 기본/확장 **커밋 타입 정의** + 한글 설명 + 예시  
-
-- [`git/Gitmoji.md`](git/Gitmoji.md)  
-  → **Gitmoji 목록** + 한글 설명, “이럴 때 이 이모지 쓴다” 정리  
-
-- [`git/Custom.md`](git/Custom.md)  
-  → **개인 커스텀 규칙**  
-    - Commit Mood (🥱 `zzz`, 🎮 `fun`, 🛏 `sleep`, 😡 `altf4` 등)  
-    - 공식 컨벤션에 안 들어가는 “내 맘대로 룰” 모음  
+- [`git/git.md`](git/git.md)  
+  → Conventional Commit 타입 정의, Gitmoji, Commit Mood(🥱 `zzz`, 🎮 `fun`, 🛏 `sleep`, 😡 `altf4` 등) 통합 정리
 
 ---
 
