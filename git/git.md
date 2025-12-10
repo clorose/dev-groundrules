@@ -1,3 +1,51 @@
+# Git Commit Rules
+
+커밋 메시지를 쓸 때 내가 지키는 규칙들을 정리한 문서입니다.
+
+- 기본 구조: **Conventional Commit** 타입  
+- 보조 표기: **Gitmoji**  
+- 상태/기분 로그: **Commit Mood (커스텀 이모지 + 태그)**  
+
+---
+
+## 1. Conventional Commit 타입
+
+가장 기본이 되는 커밋 타입 규칙입니다. 타입은 영어로, 메시지는 자유롭게 (한글/영문) 사용합니다.
+
+### 📘 Conventional Commit 타입 총정리표 (핵심 + 확장)
+
+| 타입         | 의미                                    | 예시                                     |
+| ------------ | --------------------------------------- | ---------------------------------------- |
+| **feat**     | 새로운 기능 추가                        | `feat: add search bar`                   |
+| **fix**      | 버그 수정                               | `fix: resolve null pointer`              |
+| **docs**     | 문서 변경                               | `docs: update README`                    |
+| **style**    | 의미 없는 스타일 변경(포맷/세미콜론 등) | `style: apply prettier`                  |
+| **refactor** | 기능 변화 없는 구조 개선                | `refactor: extract utils`                |
+| **perf**     | 성능 개선                               | `perf: optimize image resize`            |
+| **test**     | 테스트 추가/수정                        | `test: add login tests`                  |
+| **build**    | 빌드 시스템 변경(Dockerfile 포함)       | `build: update Dockerfile base image`    |
+| **ci**       | CI/CD 설정 변경                         | `ci: update GitHub Actions node version` |
+| **config**   | 설정 파일 변경                          | `config: update eslint rules`            |
+| **chore**    | 잡일(Deps 업데이트 포함)                | `chore: bump react to 18`                |
+| **revert**   | 이전 커밋 되돌림                        | `revert: revert hotfix`                  |
+
+---
+
+| 타입        | 의미                            | 예시                                     |
+| ----------- | ------------------------------- | ---------------------------------------- |
+| **db**      | DB 스키마/마이그레이션          | `db: add users table migration`          |
+| **api**     | API 스펙/엔드포인트 변경        | `api: update /auth/login response shape` |
+| **logging** | 로깅 시스템 개선                | `logging: add request trace id`          |
+| **merge**   | 브랜치 병합                     | `merge: merge feature/auth into main`    |
+| **wip**     | 작업 진행 중 (Work In Progress) | `wip: working on sidebar refactor`       |
+
+---
+
+## 2. Gitmoji 가이드
+
+커밋 타입과 함께 붙여서 쓰는 Gitmoji 목록이다.  
+의미가 겹치지 않도록, 이 표 기준으로만 사용.
+
 | 이모지 | 코드                          | 설명                                             |
 | ------ | ----------------------------- | ------------------------------------------------ |
 | 🎨      | `:art:`                       | 코드 구조 / 포맷을 개선할 때                     |
@@ -76,3 +124,24 @@
 | ✈️      | `:airplane:`                  | 오프라인 지원을 개선할 때                        |
 | 🦖      | `:t-rex:`                     | 하위 호환성을 추가하는 코드                      |
 
+---
+
+## 3. Commit Mood (옵션)
+
+> 기본 타입(feat/fix/...) 뒤에 이모지 + 태그를 붙여서 기분/상태를 남기는 용도.  
+> 예) `feat: add settings panel 🥱 [zzz]`
+
+| #   | 카테고리            | 이모지 | 태그       | 설명                                            |
+| --- | ------------------- | ------ | ---------- | ----------------------------------------------- |
+| 1   | 거의 안함           | 🥱      | `zzz`      | 거의 안 함. README/주석 한 줄 정도만 수정한 날  |
+| 2   | 안 해도 상관 없었음 | 🕰️      | `waste`    | 굳이 안 해도 됐던, 의미 낮은 변경               |
+| 3   | 심심해서 함         | 🎮      | `fun`      | 심심해서 만지작한 변경. 그래도 코드는 정상 동작 |
+| 4   | 그냥 읽기만 함      | 👁️‍🗨️      | `looking`  | 코드/문서 읽고 훑어본 날. 메모 조금 남긴 정도   |
+| 5   | 아이디어 정리       | 🧠      | `ideas`    | 아이디어, TODO, 구상만 정리한 커밋              |
+| 6   | 정리만 함           | 🧹      | `clean`    | 포맷팅, import 정리, 파일/폴더 정리 위주        |
+| 7   | 설정만 만짐         | 🛠️      | `settings` | dotfiles·툴 설정·옵션만 손댄 날                 |
+| 8   | 조금만 함           | 🐾      | `tiny`     | 아주 작은 수정/개선 한두 개만 한 날             |
+| 9   | 기분 좋음           | 🤗      | `happy`    | 사소하지만 본인 기준 꽤 만족스러운 변경         |
+| 10  | 느려짐              | 🐢      | `turtle`   | 튜닝했는데 체감상 더 느려짐. 그래도 돌아는 감   |
+| 11  | 걍 자러갈래 ㅡㅡ    | 🛏      | `sleep`    | 오늘 한 건 애매하지만 여기까지 저장하고 끝      |
+| 12  | 멘탈 나감 (“안해!”) | 😡      | `altf4`    | 멘탈 터진 상태에서 마무리 커밋. 빌드는 됨       |
