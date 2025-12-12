@@ -18,9 +18,7 @@
 <gitmoji><type>: <subject>
 ```
 
-markdown
-코드 복사
-
+- `<gitmoji>`: 아래 Gitmoji 표 참고
 - `<type>`: Conventional Commit 타입 (영문, 소문자)
 - `<subject>`:
   - 50자 이내
