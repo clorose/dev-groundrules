@@ -4,13 +4,28 @@
 
 - 기본 구조: **Conventional Commit** 타입  
 - 보조 표기: **Gitmoji**  
-- 상태/기분 로그: **Commit Mood (커스텀 이모지 + 태그)**  
+- 상태/기분 로그: **Commit Mood (커스텀 이모지 + 태그)**
 
 ---
 
 ## 1. Conventional Commit 타입
 
 가장 기본이 되는 커밋 타입 규칙입니다. 타입은 영어로, 메시지는 자유롭게 (한글/영문) 사용합니다.
+
+### 기본 포맷 (기본값)
+
+<gitmoji><type>: <subject>
+
+markdown
+코드 복사
+
+- `<type>`: Conventional Commit 타입 (영문, 소문자)
+- `<subject>`:
+  - 50자 이내
+  - 마침표(`.`) 금지
+  - 동사로 시작 (add / update / remove / fix 등)
+  - 한글/영문 자유
+
 
 ### 📘 Conventional Commit 타입 총정리표 (핵심 + 확장)
 
