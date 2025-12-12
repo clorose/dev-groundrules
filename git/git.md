@@ -14,7 +14,9 @@
 
 ### 기본 포맷 (기본값)
 
+```
 <gitmoji><type>: <subject>
+```
 
 markdown
 코드 복사
